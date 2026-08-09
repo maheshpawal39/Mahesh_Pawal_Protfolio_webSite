@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Data Analyst Portfolio of Mahesh Pawal - BCA Graduate specializing in SQL, Python, Excel, and Power BI dashboards.">
+    <meta name="keywords" content="Data Analyst, Mahesh Pawal, SQL, Python, Power BI, Excel, BCA, Portfolio, Data Analytics">
+    <meta name="author" content="Mahesh Pawal">
+    <title>Mahesh Pawal | Data Analyst Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="blob-grid">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+    <!-- Navigation Header -->
+    <header id="header">
+        <div class="nav-container container">
+            <a href="#" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-chart-line"></i></span>
+                <span class="logo-text">Mahesh<span>.Pawal</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active-link"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a></li>
+                    <li><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+                    <li><a href="#projects" class="nav-link"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
+                    <li><a href="#certifications" class="nav-link"><i class="fa-solid fa-certificate"></i> Credentials</a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                </ul>
+                <div class="nav-close" id="nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </nav>
+            <div class="nav-actions">
+                <a href="Mahesh_Pawal_Resume_ATS.pdf" download class="btn btn-secondary nav-btn">
+                    <i class="fa-solid fa-download"></i> Resume
+                </a>
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="section hero-section" id="hero">
+            <div class="hero-container container grid-2">
+                <div class="hero-content">
+                    <div class="status-badge">
+                        <span class="status-dot"></span> Available for Data Analyst Roles
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="text-gradient">Mahesh Pawal</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I am a <span class="typing-text" id="typing-element">Data Analyst</span>
+                    </h2>
+                    <p class="hero-description">
+                        Detail-oriented BCA graduate passionate about turning complex datasets into actionable business insights. Specialized in building high-impact Power BI dashboards, SQL database optimization, and Python data manipulation.
+                    </p>
+                    
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            View My Work <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="Mahesh_Pawal_Resume_ATS.pdf" download class="btn btn-outline">
+                            Download Resume <i class="fa-solid fa-download"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-socials">
+                        <a href="https://github.com/maheshpawal39" target="_blank" class="social-icon" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/mahesh-dadabhau-pawal" target="_blank" class="social-icon" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:maheshdadabhaupawal@gmail.com" class="social-icon" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image-wrapper">
+                    <div class="image-bg-glow"></div>
+                    <div class="image-card">
+                        <!-- Demonstrational Portrait Image -->
+                        <img src="mahesh pic.jpeg" alt="Mahesh Pawal Profile" class="hero-img">
+                        <div class="stat-bubble bubble-1">
+                            <div class="bubble-icon"><i class="fa-solid fa-database"></i></div>
+                            <div>
+                                <h4>PostgreSQL</h4>
+                                <p>SQL Expert</p>
+                            </div>
+                        </div>
+                        <div class="stat-bubble bubble-2">
+                            <div class="bubble-icon"><i class="fa-solid fa-chart-simple"></i></div>
+                            <div>
+                                <h4>Power BI</h4>
+                                <p>Interactive Dashboards</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <a href="#about" aria-label="Scroll Down">
+                    <span class="mouse">
+                        <span class="wheel"></span>
+                    </span>
+                </a>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">Academic & Professional Journey</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="about-grid grid-2">
+                    <div class="about-info card-glass">
+                        <h3>My Story</h3>
+                        <p class="about-text">
+                            Motivated and detail-oriented graduate with a Bachelor's degree in Computer Applications (BCA) from St. Paul Institute of Professional Studies, Indore. I combine my foundational computing knowledge with advanced data analytics practices to solve business challenges.
+                        </p>
+                        <p class="about-text">
+                            I thrive on discovering hidden patterns in data, using Excel for initial wrangling, SQL for querying and database administration, and Python libraries to preprocess data. My main goal is to convert numbers into interactive visual stories through Power BI that assist stakeholders in making decisions.
+                        </p>
+                        
+                        <div class="academic-stats">
+                            <div class="stat-card">
+                                <span class="stat-number">8.1</span>
+                                <span class="stat-label">BCA CGPA</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">4+</span>
+                                <span class="stat-label">Tech Certifications</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">2+</span>
+                                <span class="stat-label">Major Projects</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="education-timeline card-glass">
+                        <h3>Education</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">2023 - 2026</span>
+                                    <h4>Bachelor of Computer Applications (BCA)</h4>
+                                    <p class="timeline-org">St. Paul Institute of Professional Studies, Indore</p>
+                                    <div class="timeline-badge">CGPA: 8.1</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">2022</span>
+                                    <h4>Class XII (Higher Secondary)</h4>
+                                    <p class="timeline-org">Takshashila Higher Secondary School, Indore</p>
+                                    <div class="timeline-badge">MP Board: 76%</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">2020</span>
+                                    <h4>Class X (High School)</h4>
+                                    <p class="timeline-org">Takshashila Higher Secondary School, Indore</p>
+                                    <div class="timeline-badge">MP Board: 83%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">My Expertise</span>
+                    <h2 class="section-title">Technical Skills & Toolkit</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="skills-grid">
+                    <!-- Programming -->
+                    <div class="skill-category card-glass">
+                        <div class="category-header">
+                            <span class="category-icon"><i class="fa-solid fa-code-branch"></i></span>
+                            <h3>Programming</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>Python</span>
+                                    <span>Advanced</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                            </li>
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>SQL</span>
+                                    <span>Advanced</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Python Libraries -->
+                    <div class="skill-category card-glass">
+                        <div class="category-header">
+                            <span class="category-icon"><i class="fa-brands fa-python"></i></span>
+                            <h3>Python Libraries</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>Pandas & NumPy</span>
+                                    <span>Intermediate</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                            </li>
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>Matplotlib & Seaborn</span>
+                                    <span>Intermediate</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Tools & Technologies -->
+                    <div class="skill-category card-glass">
+                        <div class="category-header">
+                            <span class="category-icon"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                            <h3>Tools & Technologies</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>Microsoft Excel</span>
+                                    <span>Advanced</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                            </li>
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>Power BI</span>
+                                    <span>Advanced</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 88%;"></div></div>
+                            </li>
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>Git & GitHub</span>
+                                    <span>Intermediate</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Database -->
+                    <div class="skill-category card-glass">
+                        <div class="category-header">
+                            <span class="category-icon"><i class="fa-solid fa-database"></i></span>
+                            <h3>Databases</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>PostgreSQL</span>
+                                    <span>Advanced</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                            </li>
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>Relational Database Design</span>
+                                    <span>Intermediate</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="soft-skills-container card-glass">
+                    <h3>Soft Skills</h3>
+                    <div class="soft-skills-grid">
+                        <span class="soft-skill-badge"><i class="fa-solid fa-comments"></i> Communication</span>
+                        <span class="soft-skill-badge"><i class="fa-solid fa-users"></i> Teamwork</span>
+                        <span class="soft-skill-badge"><i class="fa-solid fa-brain"></i> Problem Solving</span>
+                        <span class="soft-skill-badge"><i class="fa-solid fa-clock"></i> Time Management</span>
+                        <span class="soft-skill-badge"><i class="fa-solid fa-rotate"></i> Adaptability</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects Section -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Featured Work</span>
+                    <h2 class="section-title">Data Analytics Projects</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="projects-grid grid-2">
+                    <!-- Project 1 -->
+                    <div class="project-card card-glass">
+                        <div class="project-img-wrapper">
+                           
+                            <div class="project-hover-overlay">
+                                <a href="https://github.com/maheshpawal39/Sales_Performance_Dashboard-" target="_blank" class="project-link-btn" aria-label="GitHub Code">
+                                    <i class="fa-brands fa-github"></i> View Repository
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-meta">
+                                <span class="project-tech-badge">Power BI</span>
+                                <span class="project-tech-badge">SQL</span>
+                                <span class="project-tech-badge">Python (Pandas)</span>
+                                <span class="project-tech-badge">MS Excel</span>
+                            </div>
+                            <h3 class="project-title">Sales Performance Dashboard</h3>
+                            <p class="project-description">
+                                Built an interactive Power BI dashboard featuring sales KPIs, product trends, and regional filters. Cleaned raw sales data with Python, wrote SQL queries to define key performance metrics, and optimized the layout to drive executive decision-making.
+                            </p>
+                            <div class="project-role">
+                                <strong>My Role:</strong> Collected and cleaned data, wrote optimized SQL queries, performed Python data analysis, and designed visual components in Power BI.
+                            </div>
+                            <a href="https://github.com/maheshpawal39/Customer_Behavior_Analysis" target="_blank" class="project-text-link">
+                                Source Code <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card card-glass">
+                        <div class="project-img-wrapper">
+                           
+                            <div class="project-hover-overlay">
+                                <a href="https://github.com/maheshpawal39" target="_blank" class="project-link-btn" aria-label="GitHub Code">
+                                    <i class="fa-brands fa-github"></i> View Repository
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-meta">
+                                <span class="project-tech-badge">Power BI</span>
+                                <span class="project-tech-badge">SQL</span>
+                                <span class="project-tech-badge">Exploratory Data Analysis</span>
+                                <span class="project-tech-badge">Pandas</span>
+                            </div>
+                            <h3 class="project-title">Customer Behavior Analysis Dashboard</h3>
+                            <p class="project-description">
+                                Designed a tracking system to visualize shopping trends, product preferences, and discount responsiveness. Cleaned data and calculated retention metrics in Python, built sub-queries in PostgreSQL, and designed a multi-view Power BI workspace.
+                            </p>
+                            <div class="project-role">
+                                <strong>My Role:</strong> Performed Exploratory Data Analysis (EDA), cleaned customer files, developed relational SQL databases, and configured customer analytics charts.
+                            </div>
+                            <a href="https://github.com/maheshpawal39" target="_blank" class="project-text-link">
+                                Source Code <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Certifications & Achievements Section -->
+        <section class="section certifications-section" id="certifications">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Achievements</span>
+                    <h2 class="section-title">Certifications & Highlights</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="cert-achieve-grid grid-2">
+                    <!-- Certifications -->
+                    <div class="certifications-list card-glass">
+                        <h3>Professional Credentials</h3>
+                        <div class="cert-item">
+                            <div class="cert-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div class="cert-info">
+                                <h4>Certification Program in Employability Skills</h4>
+                                <p>EduBridge • 2026</p>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-icon"><i class="fa-brands fa-python"></i></div>
+                            <div class="cert-info">
+                                <h4>Python Certification</h4>
+                                <p>SkillCourse • 2026</p>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-icon"><i class="fa-solid fa-database"></i></div>
+                            <div class="cert-info">
+                                <h4>SQL Certification</h4>
+                                <p>SkillCourse • 2026</p>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-icon"><i class="fa-solid fa-file-excel"></i></div>
+                            <div class="cert-info">
+                                <h4>Excel Certification</h4>
+                                <p>SkillCourse • 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Achievements & Highlights -->
+                    <div class="highlights-list card-glass">
+                        <h3>Key Highlights</h3>
+                        <div class="highlight-item">
+                            <div class="hl-badge"><i class="fa-solid fa-trophy"></i></div>
+                            <div class="hl-info">
+                                <h4>Academic Consistency</h4>
+                                <p>Maintained a competitive 8.1 CGPA during Bachelor of Computer Applications (BCA) program.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="hl-badge"><i class="fa-solid fa-medal"></i></div>
+                            <div class="hl-info">
+                                <h4>Certified Technical Skills</h4>
+                                <p>Earned 4 distinct technical certifications in SQL, Python, Excel, and Professional Employability Skills in 2026.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="hl-badge"><i class="fa-solid fa-people-group"></i></div>
+                            <div class="hl-info">
+                                <h4>Team Leadership</h4>
+                                <p>Led technical study groups for relational databases and Python programming in college, teaching concepts to 15+ peers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">Let's Connect</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="contact-grid grid-2">
+                    <!-- Contact Information -->
+                    <div class="contact-info card-glass">
+                        <h3>Contact Information</h3>
+                        <p class="contact-intro">
+                            If you are looking for a motivated entry-level Data Analyst who is ready to tackle challenging data problems, feel free to reach out. I am open to full-time roles, internships, and project collaborations.
+                        </p>
+                        
+                        <div class="contact-details">
+                            <a href="mailto:maheshpawal39@gmail.com" class="contact-detail-item">
+                                <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>maheshpawal39@gmail.com</p>
+                                </div>
+                            </a>
+                            <a href="tel:+919131682083" class="contact-detail-item">
+                                <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>+91 91316 82083</p>
+                                </div>
+                            </a>
+                            <div class="contact-detail-item">
+                                <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Indore, Madhya Pradesh, India</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-social-header">Follow / Connect</div>
+                        <div class="contact-socials">
+                            <a href="https://github.com/maheshpawal39" target="_blank" class="social-icon" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/mahesh-dadabhau-pawal" target="_blank" class="social-icon" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper card-glass">
+                        <h3>Send a Message</h3>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="form-name">Name</label>
+                                <input type="text" id="form-name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Email</label>
+                                <input type="email" id="form-email" placeholder="Your Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" placeholder="Project, Hiring, Collaboration..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" rows="5" placeholder="Write your message here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                Send Message <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                            <div id="form-status" class="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container container">
+            <div class="footer-top">
+                <a href="#" class="logo">
+                    <span class="logo-icon"><i class="fa-solid fa-chart-line"></i></span>
+                    <span class="logo-text">Mahesh<span>.Pawal</span></span>
+                </a>
+                <p>Translating complex databases into dynamic, interactive executive insights.</p>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Mahesh Pawal. All Rights Reserved.</p>
+                <div class="declaration">
+                    <i class="fa-solid fa-circle-check"></i> I hereby declare that the above information is true and correct to the best of my knowledge.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
