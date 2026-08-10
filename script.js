@@ -7,21 +7,18 @@ document.addEventListener('DOMContentLoaded', () => {
           navClose = document.getElementById('nav-close'),
           navLinks = document.querySelectorAll('.nav-link');
 
-    // Show menu
     if (navToggle) {
         navToggle.addEventListener('click', () => {
             navMenu.classList.add('show-menu');
         });
     }
 
-    // Hide menu
     if (navClose) {
         navClose.addEventListener('click', () => {
             navMenu.classList.remove('show-menu');
         });
     }
 
-    // Hide mobile menu on link click
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             navMenu.classList.remove('show-menu');
@@ -41,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     window.addEventListener('scroll', scrollHeader);
-    scrollHeader(); // Run once in case page loads scrolled
+    scrollHeader();
 
     /* ==========================================================================
        TYPING EFFECT FOR HERO SUBTITLE
@@ -57,27 +54,22 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentWord = words[wordIndex];
 
         if (isDeleting) {
-            // Remove character
             typingElement.textContent = currentWord.substring(0, charIndex - 1);
             charIndex--;
-            typingSpeed = 50; // Delete faster
+            typingSpeed = 50;
         } else {
-            // Add character
             typingElement.textContent = currentWord.substring(0, charIndex + 1);
             charIndex++;
-            typingSpeed = 150; // Type slower
+            typingSpeed = 150;
         }
 
-        // State changes
         if (!isDeleting && charIndex === currentWord.length) {
-            // Finished typing, wait before delete
             isDeleting = true;
-            typingSpeed = 2000; // Pause at full word
+            typingSpeed = 2000;
         } else if (isDeleting && charIndex === 0) {
-            // Finished deleting, move to next word
             isDeleting = false;
             wordIndex = (wordIndex + 1) % words.length;
-            typingSpeed = 500; // Pause before typing next word
+            typingSpeed = 500;
         }
 
         setTimeout(typeEffect, typingSpeed);
@@ -97,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         sections.forEach(current => {
             const sectionHeight = current.offsetHeight;
-            const sectionTop = current.offsetTop - 120; // offset for nav height
+            const sectionTop = current.offsetTop - 120;
             const sectionId = current.getAttribute('id');
             const navLink = document.querySelector(`.nav-link[href*=${sectionId}]`);
 
@@ -119,9 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const skillsSection = document.getElementById('skills');
     const progressBars = document.querySelectorAll('.skill-progress');
 
-    // Reset progress width to 0 first to animate from start
     progressBars.forEach(bar => {
-        // Keep target width in dataset for transition trigger
         const targetWidth = bar.style.width;
         bar.setAttribute('data-target-width', targetWidth);
         bar.style.width = '0%';
@@ -130,16 +120,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const skillsObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Populate the widths to trigger transitions
                 progressBars.forEach(bar => {
                     const target = bar.getAttribute('data-target-width');
                     bar.style.width = target;
                 });
-                observer.unobserve(entry.target); // Trigger only once
+                observer.unobserve(entry.target);
             }
         });
     }, {
-        threshold: 0.15 // Trigger when 15% of section is visible
+        threshold: 0.15
     });
 
     if (skillsSection) {
@@ -152,10 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('contact-form');
     const formStatus = document.getElementById('form-status');
 
-    // 1) Go to https://web3forms.com , enter your email (maheshpawal39@gmail.com),
-    //    it will send you a FREE Access Key by email in a few seconds.
-    // 2) Paste that key below, replacing the placeholder text.
-    const WEB3FORMS_ACCESS_KEY = "PASTE_YOUR_ACCESS_KEY_HERE";
+    const WEB3FORMS_ACCESS_KEY = "9bd2cb14-bc8c-4344-940a-c8838e203ef3";
 
     if (contactForm) {
         contactForm.addEventListener('submit', async (e) => {
@@ -166,20 +152,18 @@ document.addEventListener('DOMContentLoaded', () => {
             const subject = document.getElementById('form-subject').value.trim();
             const message = document.getElementById('form-message').value.trim();
 
-            // Basic validation check
             if (!name || !email || !subject || !message) {
                 formStatus.className = 'form-status error';
                 formStatus.textContent = 'Please fill out all fields.';
                 return;
             }
 
-            if (WEB3FORMS_ACCESS_KEY === "PASTE_YOUR_ACCESS_KEY_HERE") {
+            if (WEB3FORMS_ACCESS_KEY === "") {
                 formStatus.className = 'form-status error';
                 formStatus.textContent = 'Form not configured yet: add your Web3Forms Access Key in script.js.';
                 return;
             }
 
-            // Show sending state
             formStatus.className = 'form-status';
             formStatus.style.color = '#3b82f6';
             formStatus.textContent = 'Sending message...';
